@@ -7,10 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import myImg from './../assets/images/myimage.png';
 import myImg2 from './../assets/images/img1.png';
 import myImg3 from './../assets/images/img2.png';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import { joke } from '../thirdparty/api-dadjokes.js';
+import auth from './../auth/auth-helper';
+import Profile from '../user/EditProfile';
+import MainRouter from '../MainRouter';
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -79,42 +82,42 @@ export default function Home() {
       <Box display='flex' flexDirection='row'>
         <Card className={classes.card}>
           <Typography variant='h6' className={classes.title}>
-            Option 1
+            Mcdonalds
           </Typography>
-          <CardMedia className={classes.media} image={myImg} title='My Image' />
+          <CardMedia className={classes.media} image={myImg} title='Mcdonalds' />
 
           <CardContent>
             <Typography variant='body2' align='center' component='p'>
-              <Button component={Link} to='/dashboard' variant='outlined' color='primary'>
-                Option 1
+              <Button component={Link} to='/' variant='outlined' color='primary'>
+                Mcdonalds
               </Button>
             </Typography>
           </CardContent>
         </Card>
         <Card className={classes.card}>
           <Typography variant='h6' className={classes.title}>
-            Option 2
+            KFC
           </Typography>
-          <CardMedia className={classes.media} image={myImg2} title='My Image' />
+          <CardMedia className={classes.media} image={myImg2} title='KFC' />
 
           <CardContent>
             <Typography variant='body2' align='center' component='p'>
-              <Button component={Link} to='/dashboard' variant='outlined' color='primary'>
-                Option 2
+              <Button component={Link} to='/' variant='outlined' color='primary'>
+                KFC
               </Button>
             </Typography>
           </CardContent>
         </Card>
         <Card className={classes.card}>
           <Typography variant='h6' className={classes.title}>
-            Option 3
+            Burger King
           </Typography>
-          <CardMedia className={classes.media} image={myImg3} title='My Image' />
+          <CardMedia className={classes.media} image={myImg3} title='Burger King' />
 
           <CardContent>
             <Typography variant='body2' align='center' component='p'>
-              <Button component={Link} to='/dashboard' variant='outlined' color='primary'>
-                Option 3
+              <Button component={Link} to='/' variant='outlined' color='primary'>
+                Burger King
               </Button>
             </Typography>
           </CardContent>
