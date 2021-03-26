@@ -9,7 +9,6 @@ import Profile from './user/Profile';
 import PrivateRoute from './auth/PrivateRoute';
 import UserAdmin from './user/UsersAdmin';
 import Menu from './core/Menu';
-import Dashboard from './core/Dashboard';
 
 const MainRouter = () => {
   return (
@@ -20,7 +19,6 @@ const MainRouter = () => {
         <Route path='/users' component={Users} />
         <Route path='/signup' component={Signup} />
         <Route path='/signin' component={Signin} />
-        <Route path='/dashboard' component={Dashboard} />
         <PrivateRoute path='/user/edit/:userId' component={EditProfile} />
         <Route path='/user/:userId' component={Profile} />
         <Route path='/useradmin/:userId' component={UserAdmin} />

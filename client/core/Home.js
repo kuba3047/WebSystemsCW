@@ -12,12 +12,11 @@ import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import { joke } from '../thirdparty/api-dadjokes.js';
 import auth from './../auth/auth-helper';
-import Profile from '../user/EditProfile';
 import MainRouter from '../MainRouter';
+import useMediaQuery from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    maxWidth: 600,
     minWidth: 600,
     margin: 'auto',
     marginTop: theme.spacing(5),
