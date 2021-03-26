@@ -11,7 +11,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
     trim: true,
     unique: 'Email already exists',
-    match: [/.+\@.+\..+/, 'Please fill a valid email address'],
+    match: [/.+\@.+\..+/, 'Please enter a valid email address'],
     required: 'Email is required',
   },
   hashed_password: {
@@ -27,6 +27,10 @@ const UserSchema = new mongoose.Schema({
   about: {
     type: String,
     trim: true,
+    enum: {
+      values: ['Mcdonalds', 'KFC', 'Burger King'],
+      message: 'Please enter either Mcdonalds, KFC or Burger King',
+    },
   },
   profileclicks: {
     type: Number,
