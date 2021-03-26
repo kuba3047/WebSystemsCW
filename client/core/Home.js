@@ -40,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function alert() {
+  window.alert('test');
+}
+
 export default function Home() {
   const classes = useStyles();
   const [jokes, setJokes] = useState({
@@ -87,7 +91,13 @@ export default function Home() {
 
           <CardContent>
             <Typography variant='body2' align='center' component='p'>
-              <Button component={Link} to='/' variant='outlined' color='primary'>
+              <Button
+                component={Link}
+                to='/'
+                variant='outlined'
+                onclick="alert('test')"
+                color='primary'
+              >
                 Mcdonalds
               </Button>
             </Typography>

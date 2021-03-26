@@ -70,7 +70,7 @@ export default function Users({ match }) {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText primary={item.name} />
-                <ListItemText primary={'Your Choice: ' + item.about} />
+                <ListItemText primary={'User Choice: ' + item.about} />
                 <ListItemSecondaryAction>
                   <IconButton>
                     <ArrowForward />
