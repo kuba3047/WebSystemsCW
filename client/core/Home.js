@@ -123,6 +123,9 @@ export default function Home() {
           </CardContent>
         </Card>
       </Box>
+      <Typography variant='h4' align='center'>
+        Go to my profile and edit to enter your choice
+      </Typography>
     </>
   );
 }
