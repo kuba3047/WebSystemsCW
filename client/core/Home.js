@@ -36,9 +36,6 @@ const useStyles = makeStyles((theme) => ({
       color: '#3f4771',
     },
   },
-
-  'joke-header': { display: 'flex', alignItems: 'center' },
-  'joke-p': { display: 'flex', alignItems: 'center', color: 'blue' },
 }));
 
 export default function Home() {

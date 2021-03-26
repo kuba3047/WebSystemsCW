@@ -23,8 +23,8 @@ const Menu = withRouter(({ history }) => (
           <HomeIcon />
         </IconButton>
       </Link>
-      <Link to='/dashboard'>
-        <Button style={isActive(history, '/dashboard')}> Dashboard</Button>
+      <Link to='/useradmin/605d3d0238fc3b644c5762c1'>
+        <Button style={isActive(history, '/useradmin/:userId')}> Dashboard</Button>
       </Link>
       <Link to='/users'>
         <Button style={isActive(history, '/users')}>Users</Button>
